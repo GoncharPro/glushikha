@@ -2,121 +2,192 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Исповедальная ведомость, 1907</title>
-  <link rel="stylesheet" href="ispoved.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Список дворов по исповедной росписи 1907 года — деревня Глушиха</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .vedomost { width: 100%; min-width: 980px; border-collapse: collapse; background: #fffdf8; }
+    .vedomost th, .vedomost td { border: 1px solid #1a140e; padding: 0.28rem 0.34rem; vertical-align: middle; font-weight: normal; font-size: 0.84rem; line-height: 1.25; text-align: center; }
+    .vedomost thead th { background: #efe6d4; }
+    .vedomost td.name { text-align: left; }
+    .vedomost tr.house td { border-top: 2px solid #1a140e; }
+    .sheet-note { font-size: 0.92rem; color: #5a4d3a; }
+  </style>
 </head>
 <body>
-  <main class="sheet">
-    <header class="blank-head">
-      <div class="blank-head__top">
-        <span class="blank-head__no">№ 16</span>
-        <span class="blank-head__page">1.</span>
-      </div>
-      <h1>Вѣдомость</h1>
-      <p class="blank-head__place">
-        Костромской епархіи Ветлужскаго уѣзда
-        второго благочинническаго округа села Димитрова священника
-        Всеволода Ильинскаго о прихожанахъ за 1907 годъ
-      </p>
-      <p class="blank-head__lead">
-        обрѣтающимся при оной церкви въ приходѣ нижеявленныхъ чиновъ людямъ,
-        со изъясненіемъ противъ коегождо имени о бытіи ихъ въ святой четыредесятницѣ
-        у исповѣди и святыхъ таинъ причастія, и ктожъ исповѣдался токмо, а не причастился,
-        и ктожъ не исповѣдался.
-      </p>
-    </header>
-
-    <div class="table-wrap">
-      <table class="vedomost">
-        <thead>
-          <tr>
-            <th colspan="3">Число</th>
-            <th rowspan="3" class="names">Духовные<br>и ихъ<br>фамиліи</th>
-            <th colspan="2">Лѣта отъ<br>рожденія</th>
-            <th colspan="3">Показанія дѣйствія</th>
-          </tr>
-          <tr>
-            <th rowspan="2" class="narrow">домовъ<br>или<br>дворовъ</th>
-            <th colspan="2">Людей</th>
-            <th rowspan="2" class="narrow">мужеска<br>пола</th>
-            <th rowspan="2" class="narrow">женска<br>пола</th>
-            <th rowspan="2">Кто были<br>у исповѣди<br>и святаго<br>причастія</th>
-            <th rowspan="2">Которые испо-<br>вѣдались токмо,<br>а не причастились,<br>и за какимъ<br>винословіемъ</th>
-            <th rowspan="2">Которые<br>у испо-<br>вѣди не<br>были</th>
-          </tr>
-          <tr>
-            <th class="narrow">мужеска<br>пола</th>
-            <th class="narrow">женска<br>пола</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="4" class="center">1</td>
-            <td class="center">1</td>
-            <td class="center">—</td>
-            <td>Священникъ Всеволодъ Васильевичъ Ильинскій — вдовъ</td>
-            <td class="center">56</td>
-            <td class="center">—</td>
-            <td>были</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="center">2</td>
-            <td class="center">—</td>
-            <td>сынъ его Іоаннъ</td>
-            <td class="center">20</td>
-            <td class="center">—</td>
-            <td></td>
-            <td></td>
-            <td>по отлучкѣ</td>
-          </tr>
-          <tr>
-            <td class="center">—</td>
-            <td class="center">1</td>
-            <td>дочь же священническая вдова Александра Всеволодова Ильинская</td>
-            <td class="center">—</td>
-            <td class="center">31</td>
-            <td>были</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="center">3</td>
-            <td class="center">—</td>
-            <td>сынъ ея Александръ Михайловъ</td>
-            <td class="center">10</td>
-            <td class="center">—</td>
-            <td>были</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td rowspan="2" class="center">2</td>
-            <td class="center">4</td>
-            <td class="center">—</td>
-            <td>Діаконъ Алексѣй Ѳедоровъ Комаровъ</td>
-            <td class="center">68</td>
-            <td class="center">—</td>
-            <td>были</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td class="center">—</td>
-            <td class="center">2</td>
-            <td>жена его Марія Михайлова</td>
-            <td class="center">—</td>
-            <td class="center">61</td>
-            <td>были</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">Малая родина</div>
+        <div class="brand-title">Глушиха</div>
+        <div class="brand-sub">Деревня · история · память</div>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="istoriya.html">История</a></li>
+          <li><a href="letopis.html">Летопись</a></li>
+          <li><a href="lyudi.html">Люди и роды</a></li>
+          <li><a href="galereya.html">Галерея</a></li>
+          <li><a href="istochniki.html">Источники</a></li>
+        </ul>
+      </nav>
     </div>
-  </main>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Список дворов по исповедной росписи 1907 года</h2>
+      <div class="ornament"></div>
+      <p class="sheet-note">Ф. 130, оп. 14, д. 422 · 130-14-422-15об–16. Деревня Глушиха. Чтение по снимку; сомнительные слова отмечены «?».</p>
+      <div class="table-scroll">
+        <table class="vedomost">
+          <thead>
+            <tr>
+              <th colspan="3">Число</th>
+              <th rowspan="3">Крестьяне<br>и ихъ<br>семейства</th>
+              <th colspan="2">Лѣта отъ<br>рожденія</th>
+              <th colspan="3">Показанія дѣйствія</th>
+            </tr>
+            <tr>
+              <th rowspan="2">домовъ<br>или<br>дворовъ</th>
+              <th colspan="2">людей</th>
+              <th rowspan="2">мужеска<br>пола</th>
+              <th rowspan="2">женска<br>пола</th>
+              <th rowspan="2">Кто были<br>у исповѣди<br>и святаго<br>причастія</th>
+              <th rowspan="2">Которые исповѣдались токмо, а не причастились</th>
+              <th rowspan="2">Которые<br>у исповѣди<br>не были</th>
+            </tr>
+            <tr>
+              <th>мужеска<br>пола</th>
+              <th>женска<br>пола</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="8">148</td>
+              <td>549</td><td>—</td>
+              <td class="name">Петръ Викентьевичъ Николаевъ</td>
+              <td>43</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>550</td><td>—</td>
+              <td class="name">Николай</td>
+              <td>23</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>551</td><td>—</td>
+              <td class="name">Василій</td>
+              <td>14</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>561</td>
+              <td class="name">Марья</td>
+              <td>—</td><td>12</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>562</td>
+              <td class="name">Ирина</td>
+              <td>—</td><td>8</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>552</td><td>—</td>
+              <td class="name">Максимъ</td>
+              <td>6</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>563</td><td>—</td>
+              <td class="name">Александръ ?</td>
+              <td>8</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>564</td>
+              <td class="name">Вѣра</td>
+              <td>—</td><td>2</td><td></td><td></td><td>по малолѣтству</td>
+            </tr>
+            <tr class="house">
+              <td rowspan="3">148</td>
+              <td>565</td><td>—</td>
+              <td class="name">Александръ ? Ѳедоровъ</td>
+              <td>28</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>566</td>
+              <td class="name">жена его Анастасія</td>
+              <td>—</td><td>?</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>567</td>
+              <td class="name">Екатерина</td>
+              <td>—</td><td>1</td><td></td><td></td><td>по малолѣтству</td>
+            </tr>
+            <tr class="house">
+              <td rowspan="8">149</td>
+              <td>553</td><td>—</td>
+              <td class="name">Александръ Борисовъ Филипповъ ?</td>
+              <td>26</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>568</td><td>—</td>
+              <td class="name">Ѳеодоръ Борисовъ</td>
+              <td>16</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>569</td>
+              <td class="name">жена его Ѳекла Андреева</td>
+              <td>—</td><td>33</td><td></td><td></td><td>не была, больна</td>
+            </tr>
+            <tr>
+              <td>554</td><td>—</td>
+              <td class="name">сынъ ихъ Александръ</td>
+              <td>13</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>555</td><td>—</td>
+              <td class="name">Николай</td>
+              <td>10</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>556</td><td>—</td>
+              <td class="name">Василій</td>
+              <td>7</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>—</td><td>570</td>
+              <td class="name">Екатерина</td>
+              <td>—</td><td>5</td><td></td><td></td><td>по малолѣтству</td>
+            </tr>
+            <tr>
+              <td>571</td><td>—</td>
+              <td class="name">Іоаннъ</td>
+              <td>2</td><td>—</td><td></td><td></td><td>по малолѣтству</td>
+            </tr>
+            <tr class="house">
+              <td rowspan="2">149</td>
+              <td>—</td><td>572</td>
+              <td class="name">вдова Матрена Савельева ?</td>
+              <td>—</td><td>?</td><td>были</td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>558</td><td>—</td>
+              <td class="name">сынъ ? Андрей Андреевичъ</td>
+              <td>?</td><td>—</td><td>были</td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="margin-top:18px"><a href="istochniki.html">← К источникам</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>© Сайт деревни Глушиха</div>
+      <div><a href="index.html">На главную</a></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
-
