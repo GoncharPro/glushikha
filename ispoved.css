@@ -1,0 +1,53 @@
+.vedomost {
+  display: grid;
+  gap: 0;
+  font-family: "Times New Roman", "PT Serif", serif;
+  color: #2b2418;
+}
+
+.vedomost__head,
+.person {
+  display: grid;
+  grid-template-columns:
+    minmax(3.5rem, 0.6fr)
+    minmax(10rem, 2.2fr)
+    minmax(10rem, 2.2fr)
+    4rem
+    4rem
+    minmax(8rem, 1.4fr)
+    minmax(8rem, 1.6fr);
+}
+
+.vedomost__head {
+  background: #f4ead8;
+  border: 1px solid #4a3c2a;
+  text-align: center;
+  font-size: 0.92em;
+}
+
+.family {
+  display: grid;
+  grid-template-columns: minmax(3.5rem, 0.6fr) 1fr;
+  border-left: 1px solid #4a3c2a;
+  border-right: 1px solid #4a3c2a;
+}
+
+.family__num {
+  display: grid;
+  place-items: start center;
+  border-right: 1px solid #4a3c2a;
+  padding: 0.35rem 0.25rem;
+}
+
+.person {
+  border-bottom: 1px solid #4a3c2a;
+}
+
+.person span {
+  padding: 0.25rem 0.45rem;
+  border-right: 1px solid #4a3c2a;
+}
+
+.person span:last-child {
+  border-right: 0;
+}
